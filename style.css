@@ -1353,3 +1353,18 @@ body {
 .stage:has(.envelope-screen.opened) .page.active {
     opacity: 1 !important;
 }
+/* Sửa căn giữa bìa trên điện thoại */
+@media (max-width: 600px) {
+  .stage {
+    min-height: 0;
+    padding: 12px 0;
+  }
+
+  .page {
+    max-width: calc(100vw - 40px);
+    max-height: calc(100% - 24px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+}
